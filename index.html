@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Сайт модера d3stroyeed</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #121212; /* Темный фон */
+      color: #f0f0f0; /* Белый текст */
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      min-height: 100vh;
+      text-align: center;
+      transition: opacity 1s ease-in;
+    }
+
+    .container {
+      padding: 2rem;
+      background-color: rgba(0, 0, 0, 0.7); /* Полупрозрачный фон */
+      border-radius: 15px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6);
+      max-width: 800px;
+      width: 100%;
+    }
+
+    header {
+      margin-bottom: 1rem;
+    }
+
+    header img {
+      max-width: 150px;
+      border-radius: 50%;
+      border: 4px solid #fff;
+    }
+
+    h1 {
+      color: #fff;
+      font-size: 2.5rem;
+    }
+
+    p {
+      color: #bbb;
+      font-size: 1.2rem;
+      font-style: italic;
+    }
+
+    .mod-info {
+      margin-top: 20px;
+    }
+
+    .mod-info h2 {
+      color: #fff;
+      font-size: 2rem;
+      margin-bottom: 10px;
+    }
+
+    .mod-info p {
+      color: #ccc;
+      font-size: 1.2rem;
+    }
+
+    .back-link {
+      margin-top: 20px;
+      display: block;
+      color: #fff;
+      font-weight: bold;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    .back-link:hover {
+      color: #ccc;
+    }
+
+    /* Анимация для появления */
+    body.loaded {
+      opacity: 1;
+    }
+  </style>
+</head>
+<body class="loaded">
+  <div class="container">
+    <header>
+      <img src="d3stroyeed.jpg" alt="Фото d3stroyeed">
+      <h1>d3stroyeed</h1>
+      <p>Модератор в мире Twitch. Быстрее молнии!<br> (Или не совсем)</p>
+    </header>
+    
+    <div class="mod-info">
+      <h2>О модераторе:</h2>
+      <p>Банит быстрее, чем ты успеешь моргнуть! Но он всегда на посту.</p>
+    </div>
+
+    <a href="index.html" class="back-link">Вернуться на главный сайт</a>
+  </div>
+</body>
+</html>
