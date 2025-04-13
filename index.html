@@ -7,8 +7,8 @@
   <style>
     body {
       font-family: Arial, sans-serif;
-      background-color: #121212; /* Темный фон */
-      color: #f0f0f0; /* Белый текст */
+      background-color: #121212;
+      color: #f0f0f0;
       margin: 0;
       padding: 0;
       display: flex;
@@ -22,10 +22,10 @@
 
     .container {
       padding: 2rem;
-      background-color: rgba(0, 0, 0, 0.7); /* Полупрозрачный фон */
+      background-color: rgba(0, 0, 0, 0.7);
       border-radius: 15px;
       box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6);
-      max-width: 800px;
+      max-width: 900px;
       width: 100%;
     }
 
@@ -65,8 +65,42 @@
       font-size: 1.2rem;
     }
 
+    .gallery {
+      margin-top: 30px;
+    }
+
+    .gallery h3 {
+      color: #fff;
+      margin-bottom: 15px;
+    }
+
+    .gallery-images {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+    }
+
+    .gallery-images img {
+      width: 200px;
+      height: auto;
+      border-radius: 10px;
+      border: 2px solid #444;
+      filter: brightness(40%) blur(1px);
+      transform: scale(0.95);
+      transition: all 0.4s ease;
+      opacity: 0.6;
+    }
+
+    .gallery-images img:hover {
+      filter: brightness(100%) blur(0);
+      transform: scale(1.05);
+      opacity: 1;
+      cursor: pointer;
+    }
+
     .back-link {
-      margin-top: 20px;
+      margin-top: 30px;
       display: block;
       color: #fff;
       font-weight: bold;
@@ -78,7 +112,6 @@
       color: #ccc;
     }
 
-    /* Анимация для появления */
     body.loaded {
       opacity: 1;
     }
@@ -89,14 +122,30 @@
     <header>
       <img src="oGwHJyY.png" alt="Фото d3stroyeed">
       <h1>d3stroyeed</h1>
-    
+    </header>
+
     <div class="mod-info">
       <h2>О модераторе:</h2>
-      <p>Банит быстрее, чем ты успеешь моргнуть! Но он всегда на посту.</p>
+      <p>Банит быстрее, чем ты успеешь моргнуть! Всегда на страже порядка в чате.<br>
+         Спокоен, сдержан, но если надо — покажет, кто тут главный. Уважает всех, но банит мгновенно.</p>
+    </div>
+
+    <div class="gallery">
+      <h3>Галерея d3stroyeed:</h3>
+      <div class="gallery-images">
+        <img src="photo1.png" alt="фото 1">
+        <img src="photo2.png" alt="фото 2">
+        <img src="photo3.png" alt="фото 3">
+        <img src="photo4.png" alt="фото 4">
+        <img src="photo5.png" alt="фото 5">
+        <img src="photo6.png" alt="фото 6">
+        <img src="photo7.png" alt="фото 7">
+        <img src="photo8.png" alt="фото 8">
+        <!-- можешь вставлять сюда свои фото -->
+      </div>
     </div>
 
     <a href="https://b1ologist.github.io/ech0noway/" class="back-link">Вернуться на главный сайт</a>
   </div>
 </body>
 </html>
-
